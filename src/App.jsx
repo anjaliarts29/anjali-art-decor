@@ -142,7 +142,7 @@ export default function App() {
               <p><Phone size={18} /> +1 (000) 000-0000</p>
               <p><Mail size={18} /> hello@anjaliartdecor.com</p>
               <p><MapPin size={18} /> Frisco / Dallas Area, Texas</p>
-              <p><Instagram size={18} /> @anjaliartdecor</p>
+              <p><Star size={18} /> @anjaliartdecor</p>
             </div>
             <Button href={whatsappLink}>WhatsApp Now</Button>
           </div>
