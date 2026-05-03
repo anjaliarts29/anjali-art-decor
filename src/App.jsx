@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Flower2, Brush, Sparkles, Palette, Star, Phone, Mail, MapPin, ArrowRight, Instagram, CalendarDays } from 'lucide-react';
+import { Flower2, Brush, Sparkles, Palette, Star, Phone, Mail, MapPin } from "lucide-react";
 
 const phoneNumber = '10000000000'; // Change to your WhatsApp number with country code, example: 12145551234
 const whatsappMessage = encodeURIComponent('Hi Anjali Art Decor, I want to inquire about art classes or event decoration.');
