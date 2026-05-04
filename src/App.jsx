@@ -1,119 +1,126 @@
 import React from "react";
 
 export default function App() {
-  const whatsappNumber = "10000000000"; // replace with your number
-  const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hi I want to book art class or decoration`;
-
-  const instagramUrl = "https://instagram.com/anjaliartdecor";
-  const facebookUrl = "https://facebook.com/anjaliartdecor";
-
-  const services = [
-    "Mandala Art Classes",
-    "Drawing & Painting",
-    "Lippan Art",
-    "Kids Art & Craft",
-    "Birthday Decoration",
-    "Graduation & Event Decor"
-  ];
-
-  const packages = [
-    ["Basic Decor", "$150+", "Simple setup with balloons & backdrop"],
-    ["Premium Theme", "$300+", "Theme decor + name board + styling"],
-    ["Custom Decor", "Custom", "Mandala / Lippan artistic decor"]
-  ];
+  const whatsappNumber = "10000000000"; // replace with your WhatsApp number
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hi%20Anjali%20Art%20Decor,%20I%20want%20to%20inquire%20about%20art%20classes%20or%20event%20decoration.`;
 
   return (
     <div className="site">
-
-      {/* HEADER */}
       <header className="header">
         <h2>Anjali Art Decor</h2>
-
         <nav>
           <a href="#services">Services</a>
           <a href="#packages">Packages</a>
           <a href="#gallery">Gallery</a>
           <a href="#contact">Contact</a>
+          <a href="https://instagram.com/anjaliartdecor" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://facebook.com/anjaliartdecor" target="_blank" rel="noreferrer">Facebook</a>
         </nav>
-
-        <a className="headerBtn" href={whatsappLink}>Book Now</a>
       </header>
 
-      {/* HERO */}
       <section className="hero">
-        <h1>Art Classes & Event Decoration</h1>
-        <p>Mandala • Painting • Lippan Art • Birthday & Party Decor</p>
-        <a className="btn primary" href={whatsappLink}>WhatsApp Booking</a>
-      </section>
-
-      {/* SERVICES */}
-      <section id="services" className="section">
-        <h2>Our Services</h2>
-
-        <div className="grid">
-          {services.map((s, i) => (
-            <div key={i} className="card">{s}</div>
-          ))}
+        <div>
+          <p className="eyebrow">Frisco • Dallas • Plano • McKinney</p>
+          <h1>Art Classes, Handmade Crafts & Elegant Event Decoration</h1>
+          <p className="heroText">
+            Mandala art, painting, Lippan art, creative workshops, birthday decoration,
+            graduation setups, and small party styling.
+          </p>
+          <div className="buttons">
+            <a className="btn primary" href={whatsappLink}>Book on WhatsApp</a>
+            <a className="btn secondary" href="#services">View Services</a>
+          </div>
+        </div>
+        <div className="heroCard">
+          <div className="mandala">✺</div>
+          <h3>Creative Art + Decor Studio</h3>
+          <p>Unique handmade themes for classes and celebrations.</p>
         </div>
       </section>
 
-      {/* PACKAGES */}
-      <section id="packages" className="section">
-        <h2>Event Packages</h2>
-
+      <section className="section" id="services">
+        <p className="eyebrow">What We Offer</p>
+        <h2>Services</h2>
         <div className="grid">
-          {packages.map((p, i) => (
-            <div key={i} className="card">
-              <h3>{p[0]}</h3>
-              <p>{p[1]}</p>
-              <p>{p[2]}</p>
+          {[
+            ["Mandala Art", "Relaxing patterns, dot art, and detailed creative designs."],
+            ["Drawing & Painting", "Beginner-friendly sketching, acrylics, canvas painting, and color basics."],
+            ["Lippan Art", "Traditional mirror-work wall décor and handmade home art pieces."],
+            ["Art & Craft Classes", "Creative workshops for kids, adults, festive crafts, and hobby learners."],
+            ["Event Decoration", "Birthday, graduation, small party, and festive decoration with handmade themes."],
+            ["Custom Artwork", "Personalized art and décor pieces for gifts, homes, and events."]
+          ].map(([title, desc]) => (
+            <div className="card" key={title}>
+              <h3>{title}</h3>
+              <p>{desc}</p>
             </div>
           ))}
         </div>
       </section>
 
-      {/* GALLERY */}
-      <section id="gallery" className="section">
-        <h2>Gallery</h2>
-
-        <div className="gallery">
-          {[1,2,3,4,5,6].map(i => (
-            <div key={i} className="galleryItem">Image {i}</div>
+      <section className="section highlight" id="packages">
+        <p className="eyebrow">Event Styling</p>
+        <h2>Decoration Packages</h2>
+        <div className="grid three">
+          {[
+            ["Basic Decor", "$150+", "Simple home birthday setup, balloons, backdrop, and table styling."],
+            ["Premium Theme", "$300+", "Theme setup with props, name board, balloon arch, and detailed styling."],
+            ["Custom Artistic Decor", "Custom", "Mandala, Lippan, handmade crafts, festive décor, and personalized event design."]
+          ].map(([title, price, desc]) => (
+            <div className="priceCard" key={title}>
+              <h3>{title}</h3>
+              <h4>{price}</h4>
+              <p>{desc}</p>
+            </div>
           ))}
         </div>
       </section>
 
-      {/* TESTIMONIAL */}
-      <section className="section">
-        <h2>What Clients Say</h2>
-        <p>“Beautiful decoration and creative art classes. Highly recommended!”</p>
-      </section>
-
-      {/* CONTACT */}
-      <section id="contact" className="contact">
-        <h2>Contact</h2>
-        <p>Frisco / Dallas Area</p>
-        <p>Phone: +1 (000) 000-0000</p>
-        <p>Email: hello@anjaliartdecor.com</p>
-
-        <div className="socialLinks">
-          <a href={instagramUrl} target="_blank">Instagram</a>
-          <a href={facebookUrl} target="_blank">Facebook</a>
+      <section className="section" id="gallery">
+        <p className="eyebrow">Gallery Preview</p>
+        <h2>Artwork & Event Ideas</h2>
+        <div className="gallery">
+          {["Mandala Artwork", "Lippan Wall Decor", "Canvas Painting", "Birthday Setup", "Graduation Decor", "Kids Craft Workshop"].map((item) => (
+            <div className="galleryItem" key={item}>
+              <div className="placeholder">✦</div>
+              <p>{item}</p>
+            </div>
+          ))}
         </div>
       </section>
 
-      {/* FLOATING BUTTONS */}
-      <div className="floatingSocials">
-        <a className="floatIcon whatsapp" href={whatsappLink}>W</a>
-        <a className="floatIcon instagram" href={instagramUrl}>I</a>
-        <a className="floatIcon facebook" href={facebookUrl}>F</a>
+      <section className="section why">
+        <p className="eyebrow">Why Choose Us</p>
+        <h2>More than decoration. More than art classes.</h2>
+        <p>
+          Anjali Art Decor combines creative teaching, handmade crafts, cultural art styles,
+          and beautiful small-event styling—making your learning and celebrations feel personal,
+          artistic, and memorable.
+        </p>
+      </section>
+
+      <section className="contact" id="contact">
+        <div>
+          <p className="eyebrow light">Contact</p>
+          <h2>Book Your Class or Event</h2>
+          <p>Serving Frisco, Dallas, Plano, McKinney and nearby areas.</p>
+          <p><b>Phone:</b> +1 (000) 000-0000</p>
+          <p><b>Email:</b> hello@anjaliartdecor.com</p>
+        </div>
+        <a className="btn white" href={whatsappLink}>WhatsApp Now</a>
+        <div className="socialLinks">
+        <a href="https://instagram.com/anjaliartdecor" target="_blank" rel="noreferrer">
+          Instagram
+        </a>
+        <a href="https://facebook.com/anjaliartdecor" target="_blank" rel="noreferrer">
+          Facebook
+        </a>
       </div>
+      </section>
 
-      {/* FOOTER */}
       <footer>
-        © 2026 Anjali Art Decor • Art Classes • Event Decoration
+        © 2026 Anjali Art Decor • Art Classes • Crafts • Event Decoration
       </footer>
-
     </div>
   );
 }
