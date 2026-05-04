@@ -13,6 +13,8 @@ export default function App() {
           <a href="#packages">Packages</a>
           <a href="#gallery">Gallery</a>
           <a href="#contact">Contact</a>
+          <a href="https://instagram.com/anjaliartdecor" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://facebook.com/anjaliartdecor" target="_blank" rel="noreferrer">Facebook</a>
         </nav>
       </header>
 
@@ -106,6 +108,14 @@ export default function App() {
           <p><b>Email:</b> hello@anjaliartdecor.com</p>
         </div>
         <a className="btn white" href={whatsappLink}>WhatsApp Now</a>
+        <div className="socialLinks">
+        <a href="https://instagram.com/anjaliartdecor" target="_blank" rel="noreferrer">
+          Instagram
+        </a>
+        <a href="https://facebook.com/anjaliartdecor" target="_blank" rel="noreferrer">
+          Facebook
+        </a>
+      </div>
       </section>
 
       <footer>
