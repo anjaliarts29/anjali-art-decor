@@ -260,3 +260,22 @@ footer {
     font-size: 80px;
   }
 }
+.socialLinks {
+  margin-top: 22px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.socialLinks a {
+  background: white;
+  color: #9a3412;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 700;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.socialLinks a:hover {
+  transform: translateY(-2px);
+}
