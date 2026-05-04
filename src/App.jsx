@@ -1,12 +1,11 @@
 import React from "react";
 
 export default function App() {
-  const whatsappNumber = "10000000000"; // replace
+  const whatsappNumber = "10000000000"; // replace with your number
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hi I want to book art class or decoration`;
+
   const instagramUrl = "https://instagram.com/anjaliartdecor";
   const facebookUrl = "https://facebook.com/anjaliartdecor";
-
-  const whatsappLink =
-    `https://wa.me/${whatsappNumber}?text=Hi%20I%20want%20to%20book%20art%20class%20or%20decoration`;
 
   const services = [
     "Mandala Art Classes",
@@ -15,6 +14,12 @@ export default function App() {
     "Kids Art & Craft",
     "Birthday Decoration",
     "Graduation & Event Decor"
+  ];
+
+  const packages = [
+    ["Basic Decor", "$150+", "Simple setup with balloons & backdrop"],
+    ["Premium Theme", "$300+", "Theme decor + name board + styling"],
+    ["Custom Decor", "Custom", "Mandala / Lippan artistic decor"]
   ];
 
   return (
@@ -26,6 +31,7 @@ export default function App() {
 
         <nav>
           <a href="#services">Services</a>
+          <a href="#packages">Packages</a>
           <a href="#gallery">Gallery</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -35,14 +41,9 @@ export default function App() {
 
       {/* HERO */}
       <section className="hero">
-        <div>
-          <h1>Art Classes & Event Decoration</h1>
-          <p>Mandala • Painting • Lippan Art • Birthday & Party Decor</p>
-
-          <a className="btn primary" href={whatsappLink}>
-            WhatsApp Booking
-          </a>
-        </div>
+        <h1>Art Classes & Event Decoration</h1>
+        <p>Mandala • Painting • Lippan Art • Birthday & Party Decor</p>
+        <a className="btn primary" href={whatsappLink}>WhatsApp Booking</a>
       </section>
 
       {/* SERVICES */}
@@ -52,6 +53,21 @@ export default function App() {
         <div className="grid">
           {services.map((s, i) => (
             <div key={i} className="card">{s}</div>
+          ))}
+        </div>
+      </section>
+
+      {/* PACKAGES */}
+      <section id="packages" className="section">
+        <h2>Event Packages</h2>
+
+        <div className="grid">
+          {packages.map((p, i) => (
+            <div key={i} className="card">
+              <h3>{p[0]}</h3>
+              <p>{p[1]}</p>
+              <p>{p[2]}</p>
+            </div>
           ))}
         </div>
       </section>
@@ -67,34 +83,35 @@ export default function App() {
         </div>
       </section>
 
+      {/* TESTIMONIAL */}
+      <section className="section">
+        <h2>What Clients Say</h2>
+        <p>“Beautiful decoration and creative art classes. Highly recommended!”</p>
+      </section>
+
       {/* CONTACT */}
       <section id="contact" className="contact">
         <h2>Contact</h2>
         <p>Frisco / Dallas Area</p>
         <p>Phone: +1 (000) 000-0000</p>
         <p>Email: hello@anjaliartdecor.com</p>
+
+        <div className="socialLinks">
+          <a href={instagramUrl} target="_blank">Instagram</a>
+          <a href={facebookUrl} target="_blank">Facebook</a>
+        </div>
       </section>
 
-      {/* FLOATING SOCIAL ICONS */}
+      {/* FLOATING BUTTONS */}
       <div className="floatingSocials">
-
-        <a className="floatIcon whatsapp" href={whatsappLink} target="_blank" rel="noreferrer">
-          W
-        </a>
-
-        <a className="floatIcon instagram" href={instagramUrl} target="_blank" rel="noreferrer">
-          I
-        </a>
-
-        <a className="floatIcon facebook" href={facebookUrl} target="_blank" rel="noreferrer">
-          F
-        </a>
-
+        <a className="floatIcon whatsapp" href={whatsappLink}>W</a>
+        <a className="floatIcon instagram" href={instagramUrl}>I</a>
+        <a className="floatIcon facebook" href={facebookUrl}>F</a>
       </div>
 
       {/* FOOTER */}
       <footer>
-        © 2026 Anjali Art Decor
+        © 2026 Anjali Art Decor • Art Classes • Event Decoration
       </footer>
 
     </div>
