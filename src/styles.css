@@ -326,3 +326,32 @@ footer {
   margin: 0;
   font-weight: 700;
 }
+.galleryItem {
+  overflow: hidden;
+  border-radius: 16px;
+  position: relative;
+}
+
+.galleryItem img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.galleryItem:hover img {
+  transform: scale(1.08);
+}
+
+/* Optional overlay effect */
+.galleryItem p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 10px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  font-weight: 600;
+}
