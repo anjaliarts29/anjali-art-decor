@@ -110,12 +110,13 @@ export default function App() {
         </div>
         <a className="btn white" href={whatsappLink}>WhatsApp Now</a>
         <div className="socialLinks">
-        <a href="https://instagram.com/anjaliartdecor" target="_blank" rel="noreferrer">
-          Instagram
-        </a>
-        <a href="https://facebook.com/anjaliartdecor" target="_blank" rel="noreferrer">
-          Facebook
-        </a>
+          <a href="https://instagram.com/anjaliartdecor" target="_blank" rel="noreferrer">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
+          </a>
+        
+          <a href="https://facebook.com/anjaliartdecor" target="_blank" rel="noreferrer">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" />
+          </a>
       </div>
       </section>
 
