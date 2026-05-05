@@ -38,7 +38,7 @@ export default function App() {
           </div>
         </div>
         <div className="heroCard">
-          <div className="mandala">✺</div>
+          <img src={logo} alt="Creative Art Decor Studio" className="logoImage" />
           <h3>Creative Art + Decor Studio</h3>
           <p>Unique handmade themes for classes and celebrations.</p>
         </div>
