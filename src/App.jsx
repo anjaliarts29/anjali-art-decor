@@ -43,19 +43,20 @@ export default function App() {
         <h2>Services</h2>
         <div className="grid">
           {[
-            ["Mandala Art", "Relaxing patterns, dot art, and detailed creative designs."],
-            ["Drawing & Painting", "Beginner-friendly sketching, acrylics, canvas painting, and color basics."],
-            ["Lippan Art", "Traditional mirror-work wall décor and handmade home art pieces."],
-            ["Art & Craft Classes", "Creative workshops for kids, adults, festive crafts, and hobby learners."],
-            ["Event Decoration", "Birthday, graduation, small party, and festive decoration with handmade themes."],
-            ["Custom Artwork", "Personalized art and décor pieces for gifts, homes, and events."]
-          ].map(([title, desc]) => (
+            ["🎨", "Mandala Art", "Relaxing patterns, dot art, and detailed creative designs."],
+            ["🖌️", "Drawing & Painting", "Beginner-friendly sketching, acrylics, canvas painting, and color basics."],
+            ["✨", "Lippan Art", "Traditional mirror-work wall décor and handmade home art pieces."],
+            ["✂️", "Art & Craft Classes", "Creative workshops for kids, adults, festive crafts, and hobby learners."],
+            ["🎈", "Event Decoration", "Birthday, graduation, small party, and festive decoration with handmade themes."],
+            ["🖼️", "Custom Artwork", "Personalized art and décor pieces for gifts, homes, and events."]
+          ].map(([icon, title, desc]) => (
             <div className="card" key={title}>
+              <div className="serviceIcon">{icon}</div>
               <h3>{title}</h3>
               <p>{desc}</p>
             </div>
           ))}
-        </div>
+    </div>
       </section>
 
       <section className="section highlight" id="packages">
