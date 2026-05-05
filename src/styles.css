@@ -295,3 +295,22 @@ footer {
   transform: translateY(-6px);
   box-shadow: 0 18px 45px rgba(154, 74, 19, 0.14);
 }
+.socialLinks {
+  margin-top: 22px;
+  display: flex;
+  gap: 16px;
+}
+
+.socialLinks a img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  padding: 6px;
+  background: white;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+
+.socialLinks a img:hover {
+  transform: scale(1.1);
+}
