@@ -1,3 +1,9 @@
+
+import mandala from "./assets/mandala.jpg";
+import lippan from "./assets/lippan.jpg";
+import birthday from "./assets/birthday.jpg";
+import kids from "./assets/kids.jpg";
+import decor from "./assets/decor.jpg";
 import React from "react";
 
 export default function App() {
