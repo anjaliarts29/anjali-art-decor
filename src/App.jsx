@@ -81,13 +81,38 @@ export default function App() {
         <p className="eyebrow">Gallery Preview</p>
         <h2>Artwork & Event Ideas</h2>
         <div className="gallery">
-          {["Mandala Artwork", "Lippan Wall Decor", "Canvas Painting", "Birthday Setup", "Graduation Decor", "Kids Craft Workshop"].map((item) => (
-            <div className="galleryItem" key={item}>
-              <div className="placeholder">✦</div>
-              <p>{item}</p>
-            </div>
-          ))}
-        </div>
+  {[
+    {
+      title: "Mandala Artwork",
+      img: "https://images.unsplash.com/photo-1529101091764-c3526daf38fe"
+    },
+    {
+      title: "Lippan Wall Decor",
+      img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+    },
+    {
+      title: "Canvas Painting",
+      img: "https://images.unsplash.com/photo-1513364776144-60967b0f800f"
+    },
+    {
+      title: "Birthday Setup",
+      img: "https://images.unsplash.com/photo-1543728069-a3f97c5a2f32"
+    },
+    {
+      title: "Graduation Decor",
+      img: "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b"
+    },
+    {
+      title: "Kids Craft Workshop",
+      img: "https://images.unsplash.com/photo-1588072432836-e10032774350"
+    }
+  ].map((item) => (
+    <div className="galleryItem" key={item.title}>
+      <img src={item.img} alt={item.title} />
+      <p>{item.title}</p>
+    </div>
+  ))}
+</div>
       </section>
 
       <section className="section why">
