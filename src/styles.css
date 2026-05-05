@@ -384,3 +384,10 @@ footer {
   color: white;
   font-weight: 600;
 }
+.logoImage {
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto 20px;
+  display: block;
+  border-radius: 16px;
+}
