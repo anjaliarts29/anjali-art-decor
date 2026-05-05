@@ -1,4 +1,4 @@
-
+import logo from "./assets/logo.png";
 import mandala from "./assets/mandala.jpg";
 import lippan from "./assets/lippan.jpg";
 import birthday from "./assets/birthday.jpg";
