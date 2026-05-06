@@ -567,12 +567,15 @@ nav a:hover {
   pointer-events: none;
 }
 
-.hero h1 {
-  font-size: clamp(52px, 7vw, 88px);
-  line-height: 1.02;
+.hero h1,
+.luxuryHeading {
+  font-size: clamp(34px, 4.2vw, 58px);
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -1px;
   color: #2f1d14;
-  letter-spacing: -2px;
-  max-width: 900px;
+  margin-bottom: 22px;
+  max-width: 720px;
 }
 
 .heroText {
