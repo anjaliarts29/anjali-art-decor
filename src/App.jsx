@@ -1,9 +1,11 @@
+import mandalaImage from "./assets/mandala-new.jpg";
+import lippanImage from "./assets/lippan-art.jpg";
+import diwaliImage from "./assets/diwali.jpg";
+import ganpatiImage from "./assets/ganpati.jpg";
+import birthdayImage from "./assets/birthday.jpg";
+import kidsImage from "./assets/kids.jpg";
+
 import logo from "./assets/logo.png";
-import mandala from "./assets/mandala.jpg";
-import lippan from "./assets/lippan.jpg";
-import birthday from "./assets/birthday.jpg";
-import kids from "./assets/kids.jpg";
-import decor from "./assets/decor.jpg";
 import React from "react";
 
 export default function App() {
@@ -175,30 +177,31 @@ export default function App() {
         <h2>Artwork & Event Ideas</h2>
         <div className="gallery">
   {[
-    {
-      title: "Mandala Artwork",
-      img: "https://images.unsplash.com/photo-1529101091764-c3526daf38fe"
-    },
-    {
-      title: "Lippan Wall Decor",
-      img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
-    },
-    {
-      title: "Canvas Painting",
-      img: "https://images.unsplash.com/photo-1513364776144-60967b0f800f"
-    },
-    {
-      title: "Birthday Setup",
-      img: "https://images.unsplash.com/photo-1543728069-a3f97c5a2f32"
-    },
-    {
-      title: "Graduation Decor",
-      img: "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b"
-    },
-    {
-      title: "Kids Craft Workshop",
-      img: "https://images.unsplash.com/photo-1588072432836-e10032774350"
-    }
+     {
+    title: "Mandala Art Work",
+    image: mandalaImage,
+  },
+  {
+    title: "Lippan Art Work",
+    image: lippanImage,
+  },
+  {
+    title: "Diwali & Rangoli Decor",
+    image: diwaliImage,
+  },
+  {
+    title: "Party & Ganpati Decoration",
+    image: ganpatiImage,
+  },
+  {
+    title: "Birthday Decoration",
+    image: birthdayImage,
+  },
+  {
+    title: "Kids Art Workshop",
+    image: kidsImage,
+  },
+   
   ].map((item) => (
     <div className="galleryItem" key={item.title}>
       <img src={item.img} alt={item.title} />
