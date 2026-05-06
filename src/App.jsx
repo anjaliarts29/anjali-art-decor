@@ -26,16 +26,54 @@ export default function App() {
 
       <section className="hero">
         <div>
-          <p className="eyebrow">Frisco • Dallas • Plano • McKinney</p>
-        <h1>
-          Create Beautiful Moments with{" "}
-          <span className="accentText">Art</span>,{" "}
-          <span className="accentText">Decor</span> & Handmade Creativity
-        </h1>
-          <p className="heroText">Luxury handmade decor, mandala art, creative workshops, birthday styling, and personalized artistic experiences crafted with elegance and creativity.</p>
+          <p className="eyebrow">
+            FRISCO • DALLAS • PLANO • MCKINNEY
+          </p>
+        
+          <h1 className="luxuryHeading">
+            Creative Art + Decor Studio
+          </h1>
+        
+          <p className="heroText">
+            Handmade creativity, elegant decor, artistic workshops and memorable celebrations crafted beautifully.
+          </p>
+        
+          <div className="featureIcons">
+        
+            <div className="featureItem">
+              <div className="featureEmoji">🎨</div>
+              <h4>Art Classes</h4>
+              <p>All ages</p>
+            </div>
+        
+            <div className="featureItem">
+              <div className="featureEmoji">🪷</div>
+              <h4>Handmade Crafts</h4>
+              <p>Unique & Artistic</p>
+            </div>
+        
+            <div className="featureItem">
+              <div className="featureEmoji">🎈</div>
+              <h4>Event Decoration</h4>
+              <p>Memorable Moments</p>
+            </div>
+        
+            <div className="featureItem">
+              <div className="featureEmoji">🎁</div>
+              <h4>Custom Artwork</h4>
+              <p>Personalized for You</p>
+            </div>
+        
+          </div>
+        
           <div className="buttons">
-            <a className="btn primary" href={whatsappLink}>Book on WhatsApp</a>
-            <a className="btn secondary" href="#services">View Services</a>
+            <a className="btn primary" href={whatsappLink}>
+              Book on WhatsApp
+            </a>
+        
+            <a className="btn secondary" href="#services">
+              View Services
+            </a>
           </div>
         </div>
         <div className="heroCard fullImageCard">
