@@ -853,3 +853,19 @@ nav a:hover {
     justify-content: flex-start !important;
   }
 }
+.menuIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px !important;
+}
+
+.menuIcon img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.25s ease;
+}
+
+.menuIcon:hover img {
+  transform: scale(1.15);
+}
