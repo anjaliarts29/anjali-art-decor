@@ -67,9 +67,13 @@ export default function App() {
           </div>
         
           <div className="buttons">
-            <a className="btn primary" href={whatsappLink}>
-              Book on WhatsApp
-            </a>
+          <a className="whatsappBtn" href={whatsappLink} target="_blank" rel="noreferrer">
+            <img
+            src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+            alt="WhatsApp"
+            />
+            Chat on WhatsApp
+          </a>
         
             <a className="btn secondary" href="#services">
               View Services
