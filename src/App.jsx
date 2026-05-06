@@ -26,36 +26,45 @@ export default function App() {
       <header className="header">
         <h2>Anjali Art Decor</h2>
         <nav>
-          <a href="#services">Services</a>
-          <a href="#packages">Packages</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#contact">Contact</a>
-          <a
-            href="https://instagram.com/souldotby_anjali"
-            target="_blank"
-            rel="noreferrer"
-            className="menuIcon"
-          >
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
-            alt="Instagram"
-          />
-        </a>
-
-        <a
-          href="https://facebook.com/anjaliartdecor"
-          target="_blank"
-          rel="noreferrer"
-          className="menuIcon"
-        >
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
-            alt="Facebook"
-          />
-        </a>
+            <a href="#services">Services</a>
+            <a href="#packages">Packages</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+            <a
+              href="https://instagram.com/souldotby_anjali"
+              target="_blank"
+              rel="noreferrer"
+              className="menuIcon"
+            >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+              alt="Instagram"
+            />
+            </a>
+            <a
+              href="https://facebook.com/anjaliartdecor"
+              target="_blank"
+              rel="noreferrer"
+              className="menuIcon"
+              >
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+                alt="Facebook"
+            />
+            </a>
+            <a
+              href="https://pinterest.com/yourprofile"
+              target="_blank"
+              rel="noreferrer"
+              className="menuIcon"
+              >
+              <img
+              src="https://cdn-icons-png.flaticon.com/512/145/145808.png"
+              alt="Pinterest"
+              />
+            </a>
         </nav>
       </header>
-
       <section className="hero">
         <div>
           <p className="eyebrow">
@@ -236,6 +245,16 @@ export default function App() {
       </a>
       <a href="https://facebook.com/anjaliartdecor" target="_blank" rel="noreferrer">
         <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" />
+      </a>
+      <a
+      href="https://pinterest.com/yourprofile"
+      target="_blank"
+      rel="noreferrer"
+      >
+      <img
+      src="https://cdn-icons-png.flaticon.com/512/145/145808.png"
+      alt="Pinterest"
+      />
       </a>
     </div>
   </div>
