@@ -9,7 +9,18 @@ import React from "react";
 export default function App() {
   const whatsappNumber = "10000000000"; // replace with your WhatsApp number
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hi%20Anjali%20Art%20Decor,%20I%20want%20to%20inquire%20about%20art%20classes%20or%20event%20decoration.`;
-
+     <a
+      href={whatsappLink}
+      className="floatingWhatsapp"
+      target="_blank"
+      rel="noreferrer"
+      >
+      <img
+      src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+      alt="WhatsApp"
+      />
+    </a>
+  
   return (
     <div className="site">
       <header className="header">
@@ -202,16 +213,5 @@ export default function App() {
       </footer>
     </div>
 
-    <a
-      href={whatsappLink}
-      className="floatingWhatsapp"
-      target="_blank"
-      rel="noreferrer"
-      >
-      <img
-      src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
-      alt="WhatsApp"
-      />
-    </a>
   );
 }
