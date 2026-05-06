@@ -7,7 +7,7 @@ import decor from "./assets/decor.jpg";
 import React from "react";
 
 export default function App() {
-  const whatsappNumber = "10000000000"; // replace with your WhatsApp number
+  const whatsappNumber = "19725890808"; // replace with your WhatsApp number
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hi%20Anjali%20Art%20Decor,%20I%20want%20to%20inquire%20about%20art%20classes%20or%20event%20decoration.`;
      <a
       href={whatsappLink}
@@ -30,8 +30,29 @@ export default function App() {
           <a href="#packages">Packages</a>
           <a href="#gallery">Gallery</a>
           <a href="#contact">Contact</a>
-          <a href="https://instagram.com/anjaliartdecor" target="_blank" rel="noreferrer">Instagram</a>
-          <a href="https://facebook.com/anjaliartdecor" target="_blank" rel="noreferrer">Facebook</a>
+          <a
+            href="https://instagram.com/souldotby_anjali"
+            target="_blank"
+            rel="noreferrer"
+            className="menuIcon"
+          >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+            alt="Instagram"
+          />
+        </a>
+
+        <a
+          href="https://facebook.com/anjaliartdecor"
+          target="_blank"
+          rel="noreferrer"
+          className="menuIcon"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+            alt="Facebook"
+          />
+        </a>
         </nav>
       </header>
 
