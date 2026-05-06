@@ -532,3 +532,57 @@ nav a:hover {
   background: linear-gradient(135deg, #c05621, #e8792e);
   color: white;
 }
+/* FINAL PREMIUM HERO */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+
+  background:
+    radial-gradient(circle at top left, rgba(255, 170, 120, 0.35), transparent 25%),
+    radial-gradient(circle at top right, rgba(255, 230, 200, 0.65), transparent 30%),
+    radial-gradient(circle at bottom center, rgba(255, 180, 140, 0.22), transparent 35%),
+    linear-gradient(
+      135deg,
+      #fffdfb 0%,
+      #fff5ee 35%,
+      #ffe9dd 65%,
+      #fff8f3 100%
+    );
+
+  padding: 100px 7%;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,0.45), transparent 18%),
+    radial-gradient(circle at 80% 70%, rgba(255,255,255,0.22), transparent 20%);
+
+  pointer-events: none;
+}
+
+.hero h1 {
+  font-size: clamp(52px, 7vw, 88px);
+  line-height: 1.02;
+  color: #2f1d14;
+  letter-spacing: -2px;
+  max-width: 900px;
+}
+
+.heroText {
+  font-size: 21px;
+  color: #6b4b35;
+  line-height: 1.8;
+  max-width: 720px;
+}
+
+.eyebrow {
+  color: #c05621;
+  letter-spacing: 0.12em;
+}
