@@ -30,11 +30,11 @@ a {
 
 .header h2 {
   margin: 0;
-  font-size: 38px;
+  font-size: 28px;
   font-family: Georgia, serif;
   font-weight: 700;
-  letter-spacing: 0.5px;
-  background: linear-gradient(135deg, #8b3a12, #d97706, #c05621);
+  letter-spacing: 0.4px;
+  background: linear-gradient(135deg, #8b3a12, #d97706);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
