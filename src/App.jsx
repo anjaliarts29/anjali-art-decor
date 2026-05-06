@@ -238,7 +238,25 @@ export default function App() {
       />
       WhatsApp Now
     </a>
-
+    <form
+        className="contactForm"
+        action="https://formspree.io/f/YOUR_FORM_ID"
+        method="POST"
+        >
+        <input name="name" placeholder="Your Name" required />
+        <input name="contact" placeholder="Phone or Email" required />
+        <select name="service" required>
+        <option value="">Interested In</option>
+        <option>Art Classes</option>
+        <option>Lippan Art</option>
+        <option>Birthday Decoration</option>
+        <option>Graduation Decoration</option>
+        <option>Custom Artwork</option>
+        </select>
+        <input name="eventDate" type="date" />
+        <textarea name="message" placeholder="Tell us about your requirement" />
+        <button type="submit">Send Inquiry</button>
+    </form>
     <div className="socialLinks">
       <a href="https://instagram.com/anjaliartdecor" target="_blank" rel="noreferrer">
         <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
