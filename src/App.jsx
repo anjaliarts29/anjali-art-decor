@@ -210,24 +210,36 @@ export default function App() {
       </section>
 
       <section className="contact" id="contact">
-        <div>
-          <p className="eyebrow light">Contact</p>
-          <h2>Book Your Class or Event</h2>
-          <p>Serving Frisco, Dallas, Plano, McKinney and nearby areas.</p>
-          <p><b>Phone:</b> +1 (000) 000-0000</p>
-          <p><b>Email:</b> hello@anjaliartdecor.com</p>
-        </div>
-        <a className="btn white" href={whatsappLink}>WhatsApp Now</a>
-        <div className="socialLinks">
-          <a href="https://instagram.com/anjaliartdecor" target="_blank" rel="noreferrer">
-            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
-          </a>
-        
-          <a href="https://facebook.com/anjaliartdecor" target="_blank" rel="noreferrer">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" />
-          </a>
-      </div>
-      </section>
+  <div className="contactContent">
+    <p className="eyebrow light">Contact</p>
+    <h2>Book Your Class or Event</h2>
+    <p>Serving Frisco, Dallas, Plano, McKinney and nearby areas.</p>
+
+    <div className="contactDetails">
+      <p><b>Phone:</b> +1 (972) 589-0808</p>
+      <p><b>Email:</b> hello@anjaliartdecor.com</p>
+    </div>
+  </div>
+
+  <div className="contactActions">
+    <a className="whatsappBtn" href={whatsappLink} target="_blank" rel="noreferrer">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+        alt="WhatsApp"
+      />
+      WhatsApp Now
+    </a>
+
+    <div className="socialLinks">
+      <a href="https://instagram.com/anjaliartdecor" target="_blank" rel="noreferrer">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
+      </a>
+      <a href="https://facebook.com/anjaliartdecor" target="_blank" rel="noreferrer">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" />
+      </a>
+    </div>
+  </div>
+</section>
 
       <footer>
         © 2026 Anjali Art Decor • Art Classes • Crafts • Event Decoration
