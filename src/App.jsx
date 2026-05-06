@@ -240,7 +240,7 @@ export default function App() {
     </a>
     <form
         className="contactForm"
-        action="https://formspree.io/f/YOUR_FORM_ID"
+        action="https://formspree.io/f/xnjwzdlg"
         method="POST"
         >
         <input name="name" placeholder="Your Name" required />
