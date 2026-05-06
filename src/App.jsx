@@ -67,12 +67,17 @@ export default function App() {
           </div>
         
           <div className="buttons">
-          <a className="whatsappBtn" href={whatsappLink} target="_blank" rel="noreferrer">
+          <a
+            className="whatsappBtn"
+            href={whatsappLink}
+            target="_blank"
+            rel="noreferrer"
+            >
             <img
             src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
             alt="WhatsApp"
             />
-            Chat on WhatsApp
+            WhatsApp Now
           </a>
         
             <a className="btn secondary" href="#services">
@@ -196,5 +201,17 @@ export default function App() {
         © 2026 Anjali Art Decor • Art Classes • Crafts • Event Decoration
       </footer>
     </div>
+
+    <a
+      href={whatsappLink}
+      className="floatingWhatsapp"
+      target="_blank"
+      rel="noreferrer"
+      >
+      <img
+      src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+      alt="WhatsApp"
+      />
+    </a>
   );
 }
