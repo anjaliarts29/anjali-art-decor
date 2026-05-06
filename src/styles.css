@@ -586,3 +586,19 @@ nav a:hover {
   color: #c05621;
   letter-spacing: 0.12em;
 }
+.accentText {
+  color: #c05621;
+  position: relative;
+}
+
+.accentText::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 190, 140, 0.45);
+  border-radius: 999px;
+  z-index: -1;
+}
