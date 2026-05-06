@@ -657,3 +657,26 @@ nav a:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.whatsappBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(135deg, #25d366, #1ebe5d);
+  color: white;
+  padding: 15px 24px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 16px;
+  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.28);
+  transition: all 0.25s ease;
+}
+
+.whatsappBtn img {
+  width: 24px;
+  height: 24px;
+}
+
+.whatsappBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 35px rgba(37, 211, 102, 0.35);
+}
