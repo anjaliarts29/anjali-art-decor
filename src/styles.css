@@ -602,3 +602,55 @@ nav a:hover {
   border-radius: 999px;
   z-index: -1;
 }
+.luxuryHeading {
+  font-size: clamp(42px, 5vw, 70px);
+  line-height: 1.08;
+  margin-bottom: 20px;
+  color: #2d1b14;
+}
+
+.featureIcons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.featureItem {
+  text-align: center;
+  padding: 10px;
+  position: relative;
+}
+
+.featureItem:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -12px;
+  top: 10%;
+  height: 80%;
+  width: 1px;
+  background: #e7b98f;
+}
+
+.featureEmoji {
+  font-size: 42px;
+  margin-bottom: 14px;
+}
+
+.featureItem h4 {
+  margin: 0;
+  font-size: 22px;
+  color: #3a2418;
+}
+
+.featureItem p {
+  margin-top: 8px;
+  color: #7a5a46;
+}
+
+@media (max-width: 900px) {
+  .featureIcons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
