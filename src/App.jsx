@@ -27,11 +27,8 @@ export default function App() {
       <section className="hero">
         <div>
           <p className="eyebrow">Frisco • Dallas • Plano • McKinney</p>
-          <h1>Art Classes, Handmade Crafts & Elegant Event Decoration</h1>
-          <p className="heroText">
-            Mandala art, painting, Lippan art, creative workshops, birthday decoration,
-            graduation setups, and small party styling.
-          </p>
+          <h1>Create Beautiful Moments with Art, Decor & Handmade Creativity</h1>
+          <p className="heroText">Luxury handmade decor, mandala art, creative workshops, birthday styling, and personalized artistic experiences crafted with elegance and creativity.</p>
           <div className="buttons">
             <a className="btn primary" href={whatsappLink}>Book on WhatsApp</a>
             <a className="btn secondary" href="#services">View Services</a>
