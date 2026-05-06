@@ -30,9 +30,9 @@ export default function App() {
             FRISCO • DALLAS • PLANO • MCKINNEY
           </p>
         
-          <h1 className="luxuryHeading">
-            Creative Art + Decor Studio
-          </h1>
+          <h1>
+  Create, Decorate & Celebrate with Handmade Art
+</h1>
         
           <p className="heroText">
             Handmade creativity, elegant decor, artistic workshops and memorable celebrations crafted beautifully.
