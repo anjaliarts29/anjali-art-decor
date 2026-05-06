@@ -733,3 +733,61 @@ nav a:hover {
   transform: translateY(-3px);
   box-shadow: 0 16px 35px rgba(37, 211, 102, 0.35);
 }
+/* MOBILE HERO FIX */
+@media (max-width: 850px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 42px 7% 55px;
+    gap: 30px;
+  }
+
+  .heroCard {
+    width: 100%;
+    max-width: 100%;
+    order: -1;
+    border-radius: 24px;
+  }
+
+  .fullHeroImage,
+  .logoImage,
+  .heroCard img {
+    width: 100%;
+    height: auto;
+    min-height: unset;
+    max-height: 320px;
+    object-fit: contain;
+    border-radius: 24px;
+  }
+
+  .hero h1,
+  .luxuryHeading {
+    font-size: 34px;
+    line-height: 1.15;
+  }
+
+  .featureIcons {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 850px) {
+  .header {
+    padding: 14px 6%;
+  }
+
+  nav {
+    overflow-x: auto;
+    max-width: 100%;
+    white-space: nowrap;
+    padding: 8px;
+  }
+
+  .header h2 {
+    font-size: 24px;
+  }
+}
