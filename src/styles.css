@@ -1028,3 +1028,31 @@ nav a:hover {
     width: 130px;
   }
 }
+/* FINAL HEADER BRAND FIX */
+.header {
+  min-height: 110px !important;
+  padding: 18px 7% !important;
+}
+
+.brandLogo img {
+  width: 230px !important;
+  max-height: 95px !important;
+  object-fit: contain !important;
+}
+
+nav {
+  transform: translateY(0);
+}
+
+@media (max-width: 850px) {
+  .header {
+    min-height: auto !important;
+    padding: 14px 6% !important;
+    gap: 14px !important;
+  }
+
+  .brandLogo img {
+    width: 160px !important;
+    max-height: 75px !important;
+  }
+}
