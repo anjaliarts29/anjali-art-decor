@@ -171,44 +171,24 @@ export default function App() {
           ))}
         </div>
       </section>
-
       <section className="section" id="gallery">
         <p className="eyebrow">Gallery Preview</p>
         <h2>Artwork & Event Ideas</h2>
-        <div className="gallery">
-  {[
-     {
-    title: "Mandala Art Work",
-    image: mandalaImage,
-  },
-  {
-    title: "Lippan Art Work",
-    image: lippanImage,
-  },
-  {
-    title: "Diwali & Rangoli Decor",
-    image: diwaliImage,
-  },
-  {
-    title: "Party & Ganpati Decoration",
-    image: ganpatiImage,
-  },
-  {
-    title: "Birthday Decoration",
-    image: birthdayImage,
-  },
-  {
-    title: "Kids Art Workshop",
-    image: kidsImage,
-  },
-   
-  ].map((item) => (
-    <div className="galleryItem" key={item.title}>
-      <img src={item.img} alt={item.title} />
-      <p>{item.title}</p>
-    </div>
-  ))}
-</div>
+          <div className="gallery">
+            {[
+              { title: "Mandala Art Work", img: mandalaImage },
+              { title: "Lippan Art Work", img: lippanImage },
+              { title: "Diwali & Rangoli Decor", img: diwaliImage },
+              { title: "Party & Ganpati Decoration", img: ganpatiImage },
+              { title: "Birthday Decoration", img: birthdayImage },
+              { title: "Kids Art Workshop", img: kidsImage }
+            ].map((item) => (
+              <div className="galleryItem" key={item.title}>
+                <img src={item.img} alt={item.title} />
+                <p>{item.title}</p>
+              </div>
+            ))}
+          </div>
       </section>
 
       <section className="section why">
