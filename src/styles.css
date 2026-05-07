@@ -996,3 +996,17 @@ nav a:hover {
     height: 320px !important;
   }
 }
+/* TOP ROW ARTWORK FIX */
+.galleryItem:nth-child(1),
+.galleryItem:nth-child(2),
+.galleryItem:nth-child(3) {
+  height: 520px !important;
+  background: #f7efe7;
+}
+
+.galleryItem:nth-child(1) img,
+.galleryItem:nth-child(2) img,
+.galleryItem:nth-child(3) img {
+  object-fit: contain !important;
+  padding: 10px;
+}
