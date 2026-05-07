@@ -1229,3 +1229,56 @@ nav {
     min-height: auto !important;
   }
 }
+/* CLEAN HEADER FIX */
+.header {
+  min-height: 104px !important;
+  padding: 16px 5% !important;
+  background: linear-gradient(135deg, #fff8f1, #ffe7d6) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 28px !important;
+}
+
+.brandLogo {
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  max-width: none !important;
+  width: auto !important;
+}
+
+.brandLogo img {
+  width: 420px !important;
+  max-height: 92px !important;
+  object-fit: contain !important;
+}
+
+nav {
+  margin-left: auto !important;
+  background: rgba(255, 255, 255, 0.85) !important;
+  padding: 12px 18px !important;
+  border-radius: 999px !important;
+  border: 1px solid #efc9aa !important;
+  box-shadow: 0 10px 24px rgba(154, 74, 19, 0.10) !important;
+}
+
+@media (max-width: 850px) {
+  .header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    min-height: auto !important;
+  }
+
+  .brandLogo img {
+    width: 300px !important;
+    max-height: 75px !important;
+  }
+
+  nav {
+    margin-left: 0 !important;
+    max-width: 100% !important;
+    overflow-x: auto !important;
+  }
+}
