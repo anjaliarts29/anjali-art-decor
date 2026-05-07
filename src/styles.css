@@ -963,3 +963,35 @@ nav a:hover {
 .contactForm button:hover {
   transform: translateY(-2px);
 }
+/* FINAL GALLERY TALL CARD FIX */
+.gallery {
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 26px !important;
+}
+
+.galleryItem {
+  height: 360px !important;
+  border-radius: 26px !important;
+}
+
+.galleryItem img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+.galleryItem p {
+  font-size: 20px !important;
+  padding: 18px !important;
+}
+
+@media (max-width: 850px) {
+  .gallery {
+    grid-template-columns: 1fr !important;
+  }
+
+  .galleryItem {
+    height: 320px !important;
+  }
+}
