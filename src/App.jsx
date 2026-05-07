@@ -4,6 +4,7 @@ import diwaliImage from "./assets/diwali.jpg";
 import ganpatiImage from "./assets/ganpati.jpg";
 import birthdayImage from "./assets/birthday.jpg";
 import kidsImage from "./assets/kids.jpg";
+import logoIcon from "./assets/logo-icon.png";
 
 import logo from "./assets/logo.png";
 import React from "react";
@@ -26,7 +27,9 @@ export default function App() {
   return (
     <div className="site">
       <header className="header">
-        <h2>Anjali Art Decor</h2>
+        <div className="brandLogo">
+          <img src={logoIcon} alt="Anjali Art Decor Studio" />
+        </div>
         <nav>
             <a href="#services">Services</a>
             <a href="#packages">Packages</a>
