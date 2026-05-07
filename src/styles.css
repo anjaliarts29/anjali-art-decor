@@ -209,11 +209,12 @@ h2 {
   gap: 22px;
 }
 
-.galleryItem {
-  background: white;
-  border-radius: 24px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(154, 74, 19, 0.08);
+.galleryItem img {
+  width: 100% !important;
+  height: 420px !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  background: #f7efe7;
 }
 
 .placeholder {
