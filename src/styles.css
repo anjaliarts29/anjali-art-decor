@@ -1282,3 +1282,75 @@ nav {
     overflow-x: auto !important;
   }
 }
+/* HEADER LAYOUT FIX */
+.header {
+  min-height: 92px !important;
+  padding: 10px 4% !important;
+  background: linear-gradient(135deg, #fff8f1, #ffe8d8) !important;
+
+  display: grid !important;
+  grid-template-columns: 620px auto !important;
+
+  align-items: center !important;
+  justify-content: space-between !important;
+  column-gap: 40px !important;
+}
+
+/* LOGO AREA */
+.brandLogo {
+  width: 620px !important;
+  max-width: 620px !important;
+
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* LOGO IMAGE */
+.brandLogo img {
+  width: 100% !important;
+  height: auto !important;
+
+  max-height: 82px !important;
+
+  object-fit: contain !important;
+  object-position: left center !important;
+
+  display: block !important;
+}
+
+/* MENU */
+nav {
+  justify-self: end !important;
+
+  background: rgba(255,255,255,0.9) !important;
+
+  padding: 12px 22px !important;
+
+  border-radius: 999px !important;
+
+  border: 1px solid #efc8aa !important;
+
+  box-shadow: 0 8px 22px rgba(154,74,19,0.08) !important;
+}
+
+/* MOBILE */
+@media (max-width: 850px) {
+
+  .header {
+    grid-template-columns: 1fr !important;
+    row-gap: 12px !important;
+  }
+
+  .brandLogo {
+    width: 100% !important;
+    max-width: 320px !important;
+  }
+
+  .brandLogo img {
+    max-height: 70px !important;
+  }
+
+  nav {
+    justify-self: start !important;
+  }
+}
