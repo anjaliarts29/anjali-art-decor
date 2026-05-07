@@ -179,9 +179,9 @@ export default function App() {
               { title: "Mandala Art Work", img: mandalaImage },
               { title: "Lippan Art Work", img: lippanImage },
               { title: "Diwali & Rangoli Decor", img: diwaliImage },
-              { title: "Party & Ganpati Decoration", img: ganpatiImage },
+              { title: "Festive Decoration", img: ganpatiImage },
               { title: "Birthday Decoration", img: birthdayImage },
-              { title: "Kids Art Workshop", img: kidsImage }
+              { title: "Kids & Adult Art Workshop", img: kidsImage }
             ].map((item) => (
               <div className="galleryItem" key={item.title}>
                 <img src={item.img} alt={item.title} />
