@@ -566,3 +566,56 @@ footer {
     align-items: stretch;
   }
 }
+/* HERO IMAGE FLOAT ANIMATION */
+.fullHeroImage {
+  animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* MAKE HEADER LOGO BIGGER */
+.brandLogo {
+  width: 760px;
+  max-width: 760px;
+}
+
+.brandLogo img {
+  max-height: 96px;
+}
+
+/* MOBILE HEADER FIX */
+@media (max-width: 850px) {
+  .header {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .brandLogo {
+    width: 100%;
+    max-width: 360px;
+    justify-content: center;
+  }
+
+  .brandLogo img {
+    max-height: 90px;
+  }
+
+  nav {
+    justify-self: center;
+    width: 100%;
+    justify-content: flex-start;
+    overflow-x: auto;
+  }
+}
