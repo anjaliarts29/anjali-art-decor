@@ -28,7 +28,7 @@ a {
 
   border-bottom: 1px solid #e7c7aa;
 
-  min-height: 110px;
+  min-height: 96px !important;
 
   overflow: visible;
 }
@@ -36,7 +36,7 @@ a {
 /* LOGO */
 .brandLogo {
   position: relative;
-  margin-bottom: -42px;   /* THIS creates overlap effect */
+  margin-bottom: -46px;   /* THIS creates overlap effect */
 
   z-index: 5;
 
@@ -716,4 +716,23 @@ footer {
 
 nav {
   align-self: center !important;
+}
+.brandLogo img {
+  width: 210px !important;
+
+  mix-blend-mode: multiply;
+
+  background: transparent !important;
+
+  filter:
+    drop-shadow(0 10px 16px rgba(154,74,19,0.10));
+
+  border-radius: 0 !important;
+}
+
+/* REMOVE WHITE CARD EFFECT */
+.brandLogo {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
 }
