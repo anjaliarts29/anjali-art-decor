@@ -16,62 +16,99 @@ a {
 
 /* HEADER */
 .header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  min-height: 92px;
-  padding: 10px 4%;
-  background: linear-gradient(135deg, #fff8f1, #ffe8d8);
-  border-bottom: 1px solid #f0c8aa;
-  box-shadow: 0 8px 24px rgba(154, 74, 19, 0.08);
+  position: relative;
 
-  display: grid;
-  grid-template-columns: 620px auto;
+  display: flex;
   align-items: center;
-  column-gap: 36px;
+  justify-content: space-between;
+
+  padding: 18px 5% 12px;
+
+  background: linear-gradient(135deg, #fffaf6, #ffeede);
+
+  border-bottom: 1px solid #e7c7aa;
+
+  min-height: 110px;
+
+  overflow: visible;
 }
 
+/* LOGO */
 .brandLogo {
-  width: 620px;
-  max-width: 620px;
+  position: relative;
+  margin-bottom: -42px;   /* THIS creates overlap effect */
+
+  z-index: 5;
+
   display: flex;
   align-items: center;
 }
 
 .brandLogo img {
-  width: 100%;
+  width: 180px;
   height: auto;
-  max-height: 82px;
+
   object-fit: contain;
-  object-position: left center;
-  display: block;
+
+  filter: drop-shadow(0 10px 18px rgba(0,0,0,0.08));
 }
 
+/* MENU */
 nav {
-  justify-self: end;
   display: flex;
   align-items: center;
-  gap: 10px;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 12px 22px;
+  gap: 14px;
+
+  background: rgba(255,255,255,0.82);
+
+  padding: 12px 24px;
+
   border-radius: 999px;
+
   border: 1px solid #efc8aa;
-  box-shadow: 0 8px 22px rgba(154, 74, 19, 0.08);
+
+  box-shadow: 0 8px 20px rgba(154,74,19,0.08);
 }
 
 nav a {
-  padding: 9px 14px;
-  border-radius: 999px;
-  font-weight: 700;
-  font-size: 14px;
   color: #7c3510;
-  transition: all 0.25s ease;
+  font-weight: 600;
+  font-size: 15px;
+
+  transition: 0.25s ease;
 }
 
 nav a:hover {
-  background: linear-gradient(135deg, #c05621, #e8792e);
-  color: white;
-  transform: translateY(-2px);
+  color: #c05621;
+}
+
+/* MOBILE */
+@media (max-width: 850px) {
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 16px;
+    padding-bottom: 18px;
+
+    gap: 16px;
+  }
+
+  .brandLogo {
+    margin-bottom: -20px;
+  }
+
+  .brandLogo img {
+    width: 130px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 100%;
+  }
 }
 
 .menuIcon {
