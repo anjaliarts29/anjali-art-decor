@@ -812,3 +812,38 @@ nav a {
     padding: 4px 6px !important;
   }
 }
+/* MENU HOVER EFFECT */
+nav a,
+.socialIcons a,
+.footerSocials a {
+  transition:
+    transform 0.25s ease,
+    color 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* TOP MENU */
+nav a:hover {
+  transform: translateY(-3px) scale(1.05);
+  color: #c05621;
+}
+
+/* SOCIAL ICONS TOP + FOOTER */
+.socialIcons a:hover,
+.footerSocials a:hover {
+  transform: translateY(-4px) scale(1.12);
+
+  box-shadow: 0 8px 18px rgba(192, 86, 33, 0.22);
+}
+
+/* OPTIONAL ICON GLOW */
+.socialIcons img,
+.footerSocials img {
+  transition: transform 0.25s ease;
+}
+
+.socialIcons a:hover img,
+.footerSocials a:hover img {
+  transform: rotate(4deg);
+}
