@@ -690,3 +690,30 @@ footer {
     height: 22px !important;
   }
 }
+
+/* HEADER LOGO OVERLAP FIX */
+.header {
+  min-height: 125px !important;
+  padding: 14px 5% 18px !important;
+  overflow: visible !important;
+}
+
+.brandLogo {
+  margin-bottom: -58px !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.brandLogo img {
+  width: 240px !important;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  filter: drop-shadow(0 12px 18px rgba(154, 74, 19, 0.18));
+  mix-blend-mode: multiply;
+}
+
+nav {
+  align-self: center !important;
+}
