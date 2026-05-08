@@ -768,3 +768,47 @@ nav a {
     padding: 10px !important;
   }
 }
+/* MOBILE LOGO FIX */
+@media (max-width: 850px) {
+
+  .header {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    padding-top: 10px !important;
+    padding-bottom: 12px !important;
+
+    gap: 10px !important;
+  }
+
+  .brandLogo {
+    margin-bottom: 0 !important;
+    position: relative !important;
+    z-index: 2;
+  }
+
+  .brandLogo img {
+    width: 120px !important;
+    display: block;
+  }
+
+  nav {
+    width: 95% !important;
+
+    margin-top: 0 !important;
+
+    justify-content: center !important;
+
+    flex-wrap: wrap !important;
+
+    gap: 10px !important;
+
+    padding: 10px 12px !important;
+  }
+
+  nav a {
+    font-size: 12px !important;
+    padding: 4px 6px !important;
+  }
+}
