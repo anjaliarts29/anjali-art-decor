@@ -1,3 +1,4 @@
+
 import mandalaImage from "./assets/mandala-new.jpg";
 import lippanImage from "./assets/lippan-art.jpg";
 import diwaliImage from "./assets/diwali.jpg";
@@ -267,7 +268,8 @@ export default function App() {
       <footer>
         © 2026 Anjali Art Decor • Art Classes • Crafts • Event Decoration
       </footer>
+      <ChatBot />
     </div>
-
+  
   );
 }
