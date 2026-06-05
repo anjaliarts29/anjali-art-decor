@@ -102,3 +102,29 @@
     bottom: 88px;
   }
 }
+.chatbot-tooltip {
+  position: fixed;
+  bottom: 95px;
+  right: 25px;
+  background: white;
+  color: #333;
+  padding: 12px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  font-size: 14px;
+  width: 180px;
+  z-index: 9999;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,20%,50%,80%,100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-6px);
+  }
+  60% {
+    transform: translateY(-3px);
+  }
+}
