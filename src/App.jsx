@@ -1,4 +1,4 @@
-
+import ChatBot from "./ChatBot";
 import mandalaImage from "./assets/mandala-new.jpg";
 import lippanImage from "./assets/lippan-art.jpg";
 import diwaliImage from "./assets/diwali.jpg";
