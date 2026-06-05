@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./ChatBot.css";
 import { useState, useEffect } from "react";
 
+
 export default function ChatBot() {
   const [open, setOpen] = useState(false);
   
@@ -17,6 +18,13 @@ export default function ChatBot() {
     { from: "bot", text: "Hi! Welcome to Anjali Art Decor. How can I help you today?" }
   ]);
   const [input, setInput] = useState("");
+  useEffect(() => {
+  const timer = setTimeout(() => {
+    setOpen(true);
+  }, 5000);
+
+  return () => clearTimeout(timer);
+}, []);
 
   const replies = [
     {
@@ -63,9 +71,16 @@ export default function ChatBot() {
     setInput("");
   };
 
-  return (
-    <>
-      <button className="chatbot-button" onClick={() => setOpen(!open)}>
+ return (
+  <>
+    {!open && (
+      <div className="chatbot-tooltip">
+        👋 Ask about Classes,
+        Workshops & Decor
+      </div>
+    )}
+
+    <button className="chatbot-button" onClick={() => setOpen(!open)}>
         💬
       </button>
 
