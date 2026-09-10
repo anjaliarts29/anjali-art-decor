@@ -146,7 +146,7 @@ export default function App() {
             ["🖌️", "Drawing & Painting", "Beginner-friendly sketching, acrylics, canvas painting, and color basics."],
             ["✨", "Lippan Art", "Traditional mirror-work wall décor and handmade home art pieces."],
             ["✂️", "Art & Craft Classes", "Creative workshops for kids, adults, festive crafts, and hobby learners."],
-            ["🎈", "Event Decoration", "Birthday, graduation, small party, and festive decoration with handmade themes."],
+            ["🎈", "Event Decoration", "Birthday parties, Ganpati, Diwali, festive celebrations, and small-event styling with creative handmade themes."],
             ["🖼️", "Custom Artwork", "Personalized art and décor pieces for gifts, homes, and events."]
           ].map(([icon, title, desc]) => (
             <div className="card" key={title}>
