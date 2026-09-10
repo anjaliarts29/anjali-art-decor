@@ -279,7 +279,7 @@ export default function ChatBot() {
           <div className="chatInputArea">
             <input
               type="text"
-              placeholder="Ask us a question..."
+              placeholder="Type your message..."
               value={input}
               onChange={(e) =>
                 setInput(e.target.value)
