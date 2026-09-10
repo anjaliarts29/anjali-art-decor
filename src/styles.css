@@ -1132,3 +1132,72 @@ nav a:hover {
     height: 54px;
   }
 }
+/* FINAL MOBILE HEADER */
+@media (max-width: 850px) {
+
+  .header {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    padding: 10px 12px 14px !important;
+    gap: 8px !important;
+
+    min-height: auto !important;
+  }
+
+  .brandLogo {
+    width: auto !important;
+    max-width: 210px !important;
+    margin: 0 auto !important;
+  }
+
+  .brandLogo img {
+    width: 100% !important;
+    max-width: 210px !important;
+    height: auto !important;
+    max-height: none !important;
+  }
+
+  nav {
+    width: calc(100% - 12px) !important;
+
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    gap: 3px !important;
+
+    margin: 0 auto !important;
+    padding: 7px 8px !important;
+
+    border-radius: 22px !important;
+
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+
+    scrollbar-width: none;
+  }
+
+  nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  nav a {
+    flex: 0 0 auto !important;
+
+    padding: 7px 8px !important;
+
+    font-size: 12px !important;
+  }
+
+  nav .menuIcon {
+    padding: 5px !important;
+  }
+
+  nav .menuIcon img {
+    width: 21px !important;
+    height: 21px !important;
+  }
+}
