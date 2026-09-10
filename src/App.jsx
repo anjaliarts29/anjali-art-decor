@@ -233,12 +233,15 @@ export default function App() {
         <input name="name" placeholder="Your Name" required />
         <input name="contact" placeholder="Phone or Email" required />
         <select name="service" required>
-        <option value="">Interested In</option>
-        <option>Art Classes</option>
-        <option>Lippan Art</option>
-        <option>Birthday Decoration</option>
-        <option>Graduation Decoration</option>
-        <option>Custom Artwork</option>
+          <option value="">Interested In</option>
+          <option>Art Classes & Workshops</option>
+          <option>Mandala Art</option>
+          <option>Lippan Art</option>
+          <option>Birthday Decoration</option>
+          <option>Festival Decoration</option>
+          <option>Ganpati Decoration</option>
+          <option>Diwali & Rangoli Decor</option>
+          <option>Custom Artwork</option>
         </select>
         <input name="eventDate" type="date" />
         <textarea name="message" placeholder="Tell us about your requirement" />
