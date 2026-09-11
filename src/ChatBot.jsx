@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-const [showQuickOptions, setShowQuickOptions] = useState(false);
 
 export default function ChatBot() {
   const [isOpen, setIsOpen] = useState(false);
