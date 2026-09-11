@@ -273,16 +273,7 @@ export default function ChatBot() {
   )}
 
 </div>
-
-            <a
-              className="chatWhatsapp"
-              href={whatsappLink}
-              target="_blank"
-              rel="noreferrer"
-            >
-              ☎ Continue on WhatsApp
-            </a>
-
+           
           </div>
 
           <div className="chatInputArea">
