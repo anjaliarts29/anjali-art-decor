@@ -4,6 +4,7 @@ const [showQuickOptions, setShowQuickOptions] = useState(false);
 export default function ChatBot() {
   const [isOpen, setIsOpen] = useState(false);
   const [input, setInput] = useState("");
+  const [showQuickOptions, setShowQuickOptions] = useState(false);
   useEffect(() => {
   const timer = setTimeout(() => {
     setIsOpen(true);
