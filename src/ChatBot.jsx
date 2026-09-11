@@ -249,22 +249,30 @@ export default function ChatBot() {
               </div>
             ))}
 
-            <p className="quickTitle">
-              Quick options
-            </p>
+           <div className="quickOptionsSection">
 
-            <div className="quickQuestions">
-              {quickQuestions.map((question) => (
-                <button
-                  key={question.key}
-                  onClick={() =>
-                    handleQuickQuestion(question)
-                  }
-                >
-                  {question.label}
-                </button>
-              ))}
-            </div>
+  <button
+    className="quickOptionsToggle"
+    onClick={() => setShowQuickOptions(!showQuickOptions)}
+  >
+    <span>Quick Options</span>
+    <span>{showQuickOptions ? "▲" : "▼"}</span>
+  </button>
+
+  {showQuickOptions && (
+    <div className="quickQuestions">
+      {quickQuestions.map((question) => (
+        <button
+          key={question.key}
+          onClick={() => handleQuickQuestion(question)}
+        >
+          {question.label}
+        </button>
+      ))}
+    </div>
+  )}
+
+</div>
 
             <a
               className="chatWhatsapp"
