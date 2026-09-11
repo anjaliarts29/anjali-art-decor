@@ -7,7 +7,7 @@ export default function ChatBot() {
   useEffect(() => {
   const timer = setTimeout(() => {
     setIsOpen(true);
-  }, 5000);
+  }, 10000);
 
   return () => clearTimeout(timer);
 }, []);
